@@ -4,7 +4,7 @@
 
     html, body{
          height: 100%;
-         width: 100%;
+         width: 100vw;
     }
 
     body{
@@ -15,20 +15,30 @@
         list-style-type: none;   
     }
 
+    #page-container {
+       position: relative;
+       min-height: 100vh;
+    }
+
+    #content-wrap {
+       padding-bottom: 2.5rem;    /* Footer height */
+    }
+
    
     #navleft{
         float: left;
-        padding: 5px 10px 5px 12px;
         display: flex;
         position:relative;
         right: 35px; 
+        padding: 0px 10px 0px 12px;
     }
 
     #navright{
         float: right;
         position:relative;
         right: 35px;
-        padding: 5px 10px 5px 12px;
+        padding: 0px 10px 0px 12px;
+        
     }
 
     .navbar{
@@ -39,12 +49,11 @@
     }
 
     footer{
-       position: relative;
+       position: absolute;
        width: 100%;
        background-color: rgb(241, 241, 241);
-       height: 40px;
-       bottom: 0px;
-       top: 405px;
+       height: 2.5rem;
+       bottom: 0;
        font-family: arial, sans-serif;
        font-size: 13px;
        color: rgb(97, 95, 95);
@@ -54,15 +63,13 @@
         float: left;
         position: relative;
         right: 30px;
-        top: 10px;
-        padding: 0px 10px 50px 12px;
+        padding: 0px 10px 0px 12px;
         
     }
     .rightfoot{
         float: right;
         position: relative;
-        padding: 0px 10px 5px 12px;
-        top: 10px;
+        padding: 0px 10px 0px 12px;
         right: 10px;
     }
 
@@ -91,9 +98,7 @@
         background-position: left, right;
         background-position-x: 10px, 420px;
         text-indent: 25px;
-        
-        
-
+    
         
     }
 
@@ -110,6 +115,8 @@
         <title>Google</title>
     </head>
     <body>
+        <div id="page-container"> 
+            <div id="content-wrapper">
         <div class="navbar">
             <ul>
                 <li id="navleft">About</li>
@@ -132,7 +139,8 @@
             </form>
             </div>
         </div>
-
+    </div>
+   
             <footer class="footer">
                 <div class="bottombar"> 
                 <ul>
@@ -148,6 +156,7 @@
            
         
             </footer>
+        </div>
         
     </body>
 
