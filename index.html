@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<style>
+    
+
+    html, body{
+         height: 100%;
+         width: 100%;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    ul{
+        list-style-type: none;   
+    }
+
+   
+    #navleft{
+        float: left;
+        padding: 5px 10px 5px 12px;
+        display: flex;
+        position:relative;
+        right: 35px; 
+    }
+
+    #navright{
+        float: right;
+        position:relative;
+        right: 35px;
+        padding: 5px 10px 5px 12px;
+    }
+
+    .navbar{
+        height: 30px;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        color:rgb(48, 47, 47);
+    }
+
+    footer{
+       position: relative;
+       width: 100%;
+       background-color: rgb(241, 241, 241);
+       height: 40px;
+       bottom: 0px;
+       top: 405px;
+       font-family: arial, sans-serif;
+       font-size: 13px;
+       color: rgb(97, 95, 95);
+    }
+
+    .leftfoot{
+        float: left;
+        position: relative;
+        right: 30px;
+        top: 10px;
+        padding: 0px 10px 50px 12px;
+        
+    }
+    .rightfoot{
+        float: right;
+        position: relative;
+        padding: 0px 10px 5px 12px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .logo{
+        position: relative;
+        top: 150px;
+        left: 500px;   
+    }
+    .searchbar{
+        position: relative;
+        top: 175px;
+        left: 400px;
+    }
+    .searchbar input[type=text]{
+        border-radius: 100px;
+        padding-right: 300px;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        border-color: rgb(194, 194, 194);
+        border-width: 1px;
+        box-shadow: transparent;
+        background-image: url("https://img.icons8.com/all/500/search--v1.png"), url("https://cdn.clipart.email/e0486a08d6ba6a9ff7ee276f38c2e65c_google-voice-png-and-google-voice-transparent-clipart-free-_260-380.jpeg");
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-position: left, right;
+        background-position-x: 10px, 420px;
+        text-indent: 25px;
+        
+        
+
+        
+    }
+
+    .searchbar input[type=text]:focus{
+        outline: none;
+    }
+
+
+
+</style>
+<html>
+
+    <head>
+        <title>Google</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li id="navleft">About</li>
+                <li id="navleft">Store</li>
+            </ul>
+            <ul>
+                <li id="navright">Gmail</li>
+                <li id="navright">Images</li>
+            </ul>
+
+        </div>
+      
+        <div class="content">
+        <div class="logo">
+            <img alt="Google" id="glogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div class ="searchbar">
+            <form>
+                <input id="thebar" type = text placeholder = "">
+            </form>
+            </div>
+        </div>
+
+            <footer class="footer">
+                <div class="bottombar"> 
+                <ul>
+                    <li class="leftfoot">Advertising</li>
+                    <li class="leftfoot">Business</li>
+                    <li class="leftfoot">How Search works</li>
+                </ul>
+                <ul>
+                    <li class="rightfoot">Privacy</li>
+                    <li class="rightfoot">Terms</li>
+                    <li class="rightfoot">Settings</li>
+                </ul>
+           
+        
+            </footer>
+        
+    </body>
+
+    
+
+    
+    
+</html>
+
